@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="App">
+
+        <div class="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+            <div>
+                <h1 class="text-5xl font-Greatvibes ml-2">Portfolio</h1>
+            </div>
+            <ul class="hidden md:flex">
+                <li class="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
+                    <a href="#home">home</a>
+                </li>
+                <li class="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
+                    <a href="#about">about</a>
+                </li>
+                <li class="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
+                    <a href="#projects">projects</a>
+                </li>
+                <li class="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
+                    <a href="#skills">skills</a>
+                </li>
+                <li class="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
+                    <a href="#contact">contact</a>
+                </li>
+            </ul>
+            <div class="cursor-pointer pr-4 z-10 text-gray-500 md:hidden" id = "menuIcon" onclick="toggleMenu()" >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    <ul id="navMenu" class="hidden md:flex">
+                        <li class="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
+                            <a href="#home">home</a>
+                        </li>
+                        <li class="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
+                            <a href="#about">about</a>
+                        </li>
+                        <li class="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
+                            <a href="#projects">projects</a>
+                        </li>
+                        <li class="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
+                            <a href="#skills">skills</a>
+                        </li>
+                        <li class="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
+                            <a href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </svg>
+                <script>
+                    function toggleMenu() {
+                        var menu = document.getElementById("navMenu");
+                        if (menu.style.display === "none" || menu.style.display === "") {
+                            menu.style.display = "flex";
+                        } else {
+                         menu.style.display = "none";
+                        }
+                    }
+                </script> 
+                  
+                  
+            </div>
+
+            
+        </div>
+
+        <div id="home" class="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800">
+            <div class="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full pl-8 
+            pr-2 md:flex-row">
+                 <div class="flex flex-col justify-center h-full">
+                    <p class="text-xl text-white py-3 font-semibold">Hey, My Name is</p>
+                    <h2 class="text-4xl sm:text-7xl font-bold text-white">Rupam Saundik</h2> 
+                    <p class="text-gray-500 py-4 max-w-md">
+                        "I focus on creating web applications that prioritize user<br> experience and align with the specific needs of clients."
+                    </p>
+                    <div>
+                        <a href= "#about"
+                        class="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md
+                           bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+                            About me
+                            <span class="group-hover:rotate-90 duration-300">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                 aria-hidden="true" class="ml-1" height="20"
+                                 width="20" xmlns="http://www.w3.org/2000/svg">
+                                      
+                                 <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1
+                                    1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1
+                                    1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg> 
+                            </span>
+                        </a>
+                    </div>
+                 </div>
+
+                 <div>
+                    <img src="user.jpg" alt="my-profile" class="  w-80 h-80 rounded-full  ">
+                 </div>  
+            </div>
+        </div>
+          
+        <div class="hidden lg:flex flex-col top-[35%] left-0 fixed">
+        <ul>
+          <li class="flex justify-between items-center w-40 h-14 px-4 ml-[-100px]
+              hover:ml-[-10px] hover:rounded-me duration-300 bg-gray-500 rounded-tr-md">
+             <a href="https://linkedin.com" class="flex justify-between items-center w-full text-white">
+                linkedin
+               <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 5 12"
+                height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+                <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 
+                0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 
+                0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 
+                38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 
+                54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7
+               101.9V416z"></path>
+            </svg>
+           </a>
+           </li>
+
+           <li class="flex justify-between items-center w-40 h-14 px-4 ml-[-100px]
+             hover:ml-[-10px] hover:rounded-me duration-300 bg-gray-500 rounded-tr-md">
+              <a href="www.linkedin.com/in/rupam-saundik-818b7a280" class="flex justify-between items-center w-full text-white">
+               "linkedin"
+               <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 5 12"
+                height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+                <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 
+                0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 
+                0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 
+                38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 
+                54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7
+                101.9V416z"></path>
+               </svg>
+              </a>
+            </li>
+
+            <li class="flex justify-between items-center w-40 h-14 px-4 ml-[-100px]
+             hover:ml-[-10px] hover:rounded-me duration-300 bg-gray-500 rounded-tr-md">
+             <a href="www.linkedin.com/in/rupam-saundik-818b7a280" class="flex justify-between items-center w-full text-white">
+             "linkedin"
+             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 5 12"
+             height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+             <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 
+              0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 
+              0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 
+              38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 
+              54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7
+              101.9V416z"></path>
+            </svg>
+            </a>
+            </li>
+
+            <li class="flex justify-between items-center w-40 h-14 px-4 ml-[-100px]
+              hover:ml-[-10px] hover:rounded-me duration-300 bg-gray-500 rounded-tr-md">
+               <a href="www.linkedin.com/in/rupam-saundik-818b7a280" class="flex justify-between items-center w-full text-white">
+                "linkedin"
+                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 5 12"
+                  height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 
+               0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 
+               0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 
+               38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 
+               54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7
+               101.9V416z"></path>
+            </svg>
+          </a>
+         </li>
+        </ul>
+        </div>
+
+        <div id="about" class="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white">
+            <div class="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+                <div class="pb-8">
+                    <p class="text-4xl font-bold inline border-b-4 border-gray-500">About </p>
+                </div>
+                <p class="text-2xl font-semibold mt-10">I'm Rupam Saundik, student of JNU</p>
+                <br>
+                <p class="text-xl text-gray-400">
+                    "I am a Web Development. I am familier with frontend technologies like HTML, CSS, 
+                    JavaScript, ReactJs. I am pursuing MCA from Jawaharlal Nehru 
+                    University. I'm passionate about creatin beatiful, functional and user-friendly websites and applications,
+                    and trying my best to learn and grow as a developer."
+                </p>
+                <div class="mt-10 flex">
+                    <a class="group text-white w-fit px-6 py-3 my-3 flex items-center
+                     rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+                     Projects
+                     <!-- <span class="group-hover:rotate-90 duration-300">
+                     </span> -->
+                    </a>
+
+                    <a href='RUPAM JNU.pdf' class="group text-white w-fit px-6 py-3 my-3 mx-5 flex items-center rounded-md bg-gradient-to-r 
+                          from-gray-500 to-gray-500 cursor-pointer" fdprocessedid="nchqxk">
+                        Resume 
+                    <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                       class="ml-3" height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 
+                       4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5
+                        2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0
+                         0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"></path>
+                    </svg> -->
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="skills" class="bg-gradient-to-b  from-black to-gray-800 w-full h-screen">
+            <div class="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full text-white">
+                <div>
+                    <p class="text-4xl font-bold inline border-b-4 border-gray-500">Skills</p>
+                    <p class="py-6">These are the technologies I've worked with</p>
+                </div>
+
+                <div class="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8
+                px-12 sm:px-0">
+                   <div class="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-red-400">
+                     <img src="JAVA.png" alt class="w-20 mx-auto">
+                     <p class="mt-4">Java</p>
+                    </div>
+
+                    <div class="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-orange-500">
+                        <img src="HTML.png" alt class="w-20 mx-auto">
+                        <p class="mt-4">HTML</p>
+                    </div>
+
+                    <div class="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500">
+                        <img src="CSS.png" alt class="w-20 mx-auto">
+                        <p class="mt-4">CSS</p>
+                    </div>
+
+                    <div class="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-yellow-500">
+                        <img src="JavaScript.png" alt class="w-20 mx-auto">
+                        <p class="mt-4">JavaScript</p>
+                    </div>
+
+                    <div class="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500">
+                        <img src="MySQL.png" alt class="w-20 mx-auto">
+                        <p class="mt-4">MySQL</p>
+                    </div>
+
+                    <div class="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-blue-500">
+                        <img src="ReactJS.png" alt class="w-20 mx-auto">
+                        <p class="mt-4">React</p>
+                    </div>
+
+                    <div class="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-green-400">
+                        <img src="GITHUB.png" alt class="w-20 mx-auto">
+                        <p class="mt-4">GitHub</p>
+                    </div>
+
+                </div>
+        </div>
+        
+        </div>
+
+        <div id="contact" class="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white">
+            <div class="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
+                <div class="pb-8">
+                    <p class="text-4xl font-bold inline border-b-4 border-gray-500">Contact</p>
+                    <p class="py-6">Submit the form below to get in touch with me</p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <form action="" method="Post" class="flex flex-col w-full md:w-1/2">
+                        <input type="text" name="name" placeholder="Enter your name" class="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none" fdprocessedid="v1fb4">
+                        <input type="text" name="email" placeholder="Enter your email" class="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none" fdprocessedid="ebk0nt">
+                        <textarea name="message" placeholder="Enter your message" rows="10" class="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"></textarea>
+                        <button class="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6
+                          py-3 my-8 mx-auto flex items-center rounded-md hover:scale-105 duration-300" fdprocessedid="65837o">Let's talk</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+   </div>
+   
+</body> 
+
+     

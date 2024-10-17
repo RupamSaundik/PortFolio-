@@ -1,0 +1,297 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+  
+}
+
+.wrapper{
+    background-color: #000000;
+   display: flex;
+   flex-direction: column;
+}
+
+.nav {
+    width:100%;
+    height: 65px;
+    color: white;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+}
+
+.nav h1 {
+    margin: 10px 0px 0px 8px;
+    font: 48px "Great vibes";
+    color: #ffffff;
+}
+
+.right {
+    display: flex;
+    padding-right: 50px;
+    color: #6B7280;
+    cursor: pointer;
+}
+
+span {
+    margin: 20px;
+    font: 16px "Raleway";
+    transition: transform 0.3s ease;
+}
+
+span:hover{
+   transform: scale(1.1);
+}
+
+.contain{
+    width: 100%;
+    margin-top: 200px ;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain-left{
+    margin-right: 50px;
+    font: bold;
+}
+
+.contain-left h2{
+    font: 20px "Raleway";
+    font-weight: 700;
+}
+
+.contain-left h1{
+    font: 72px "Raleway";
+    color:#ffffff;
+    font-weight: 700;
+}
+
+.contain-left p{
+    padding-top: 10px;
+    color: #6B7280;
+    font: 16px "Raleway";
+}
+
+.contain-left .AboutMe{
+    margin-top: 40px;
+    color:#ffffff;
+    background-image: linear-gradient(to right,cyan ,blue );
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 10px;
+    font: 16px "Raleway";   
+}
+
+.contain-left .arrow {
+      font-size: 24px;      
+}
+
+.contain-left .arrow::before{
+    content: '\2192';
+    transition: transform 0.3s ease;
+}
+
+.arrow:hover::before {
+    content:'\2193';
+}
+
+.contain-right img{
+    width: 350px;
+    height: 350px;
+    border-radius: 400px;
+}
+
+.space-first{
+    width: 100%;
+    height: 200px;
+}
+
+.About{
+    margin: 200px;
+    color: #ffffff;
+}
+
+.About h1{
+    margin: 20px;
+    font: 36px "Raleway";
+    font-weight: 700;
+    text-decoration: #6B7280 underline;
+    text-underline-offset: 10px;
+}
+
+.About h3 {
+    margin: 20px;
+    margin-top: 70px;
+    font: 24px "Raleway";
+    font-weight: 700;
+}
+
+.About p {
+    margin: 20px;
+    margin-top: 30px;
+    color: #9CA3AF;
+    font: 20px "Raleway";
+}
+
+.About-footer{
+    margin-top: 50px;
+}
+
+.project {
+    border: 1px solid gray;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,cyan ,blue);
+}
+
+.resume {
+    margin-left: 50px;
+    border: 1px solid gray;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    background-color: #6B7280;
+}
+
+.Projects{
+    margin:225px;
+    color: #ffffff;
+}
+
+.Projects h1{
+    font: 36px "Raleway";
+    font-weight: 700;
+    text-decoration: #6B7280 underline;
+    text-underline-offset: 10px;
+}
+
+.Projects p{
+    margin-top: 20px;
+    font: 20px "Raleway";
+}
+
+.Skills {
+    margin:225px;
+    color: #ffffff;
+}
+
+.Skills h1{
+    font: 36px "Raleway";
+    font-weight: 700;
+    text-decoration: #6B7280 underline;
+    text-underline-offset: 10px;
+}
+
+.Skills p{
+    margin-top: 20px;
+    font: 20px "Raleway";
+}
+
+.Skills .image {
+     margin-top: 40px;
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+    
+     grid-gap: 10px;
+   
+     display: block;
+}
+
+.image img{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+  
+   
+    transition: transform 1s ease;
+    border-radius: 10px;
+}
+
+.img1 {
+    box-shadow: 1px 2px 1px 2px orange;
+   
+}
+
+.img2 {
+    box-shadow: 1px 2px 1px 2px orange;
+}
+
+.img3 {
+    box-shadow: 1px 2px 1px 2px white;
+}
+
+.img4 {
+    box-shadow: 1px 2px 1px 2px yellow;
+}
+
+.img5 {
+    box-shadow: 1px 2px 1px 2px white;
+}
+
+.img6 {
+    box-shadow: 1px 2px 1px 2px lightblue;
+}
+
+.img7 {
+    box-shadow: 1px 2px 1px 2px lightskyblue;
+}
+.image img:hover {
+    transform: scale(1.05);
+}
+
+.contact{
+    margin:225px;
+    color:#ffffff;
+}
+
+.contact h1{
+    font: 36px "Raleway";
+    font-weight: 700;
+    text-decoration: #6B7280 underline;
+    text-underline-offset: 10px;
+}
+
+
+.contact p{
+    margin-top: 20px;
+    font: 20px "Raleway";
+}
+
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    
+    margin-top: 20px;
+   
+}
+
+input{
+    border: 2px solid #9CA3AF;
+    border-radius: 10px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 10vh;
+}
+
+.message {
+    height: 30vh;
+}
